@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="MDSD.tools P2 Repositoy" buildRoot="./p2" packedStrategy="UNPACK">
+  <validationSets label="MDSD.tools 2020-12">
+    <contributions label="License Feature">
+      <repositories location="https://updatesite.mdsd.tools/build-licensefeature/nightly/">
+        <features name="tools.mdsd.license.apache2.feature.group"/>
+        <features name="tools.mdsd.license.apache2.source.feature.group"/>
+        <features name="tools.mdsd.license.epl2.feature.group"/>
+        <features name="tools.mdsd.license.epl2.source.feature.group"/>
+      </repositories>
+    </contributions>
+    <contributions label="Building">
+      <repositories location="https://updatesite.mdsd.tools/ecore-workflow/nightly/"/>
+    </contributions>
+    <contributions label="Testing">
+      <repositories location="https://updatesite.mdsd.tools/library-junit5utils/nightly"/>
+      <repositories location="https://updatesite.mdsd.tools/library-standaloneinitialization/nightly/"/>
+    </contributions>
+    <contributions label="External Dependencies">
+      <repositories location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/releases/latest" mirrorArtifacts="false">
+        <features name="org.modelversioning.emfprofile.core.feature.feature.group"/>
+      </repositories>
+    </contributions>
+    <contributions label="Debugging">
+      <repositories location="https://updatesite.mdsd.tools/eclipseaddon-cdodebugutils/nightly/"/>
+    </contributions>
+    <contributions label="Implementation">
+      <repositories location="https://updatesite.mdsd.tools/library-emfeditutils/nightly/"/>
+      <repositories location="https://updatesite.mdsd.tools/thirdparty-library/nightly/"/>
+    </contributions>
+    <validationRepositories location="http://download.eclipse.org/eclipse/updates/4.18"/>
+    <validationRepositories location="http://download.eclipse.org/releases/2020-12"/>
+  </validationSets>
+  <configurations architecture="x86_64"/>
+  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
+</aggregator:Aggregation>
